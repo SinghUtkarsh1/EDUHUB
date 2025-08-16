@@ -1,0 +1,15 @@
+{
+  "name": "elearning-platform",
+  "version": "1.0.0",
+  "description": "MERN Stack E-learning Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run server",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1",
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
